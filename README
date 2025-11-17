@@ -1,4 +1,4 @@
-# Agentic Sales Forecasting System using MCP and Local LLMs
+#Agentic Sales Forecasting System using MCP and Local LLMs
 ### (MCP + Local LLM + Streamlit + Scikit-Learn)
 
 This project implements a fully agentic AI system that uses Anthropic’s **Model Context Protocol (MCP)** to allow a local LLM (running via **Ollama**) to autonomously call Python tools for:
