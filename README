@@ -1,5 +1,5 @@
-#Agentic Sales Forecasting System using MCP and Local LLMs
-### (MCP + Local LLM + Streamlit + Scikit-Learn)
+Agentic Sales Forecasting System using MCP and Local LLMs
+(MCP + Local LLM + Streamlit + Scikit-Learn)
 
 This project implements a fully agentic AI system that uses Anthropic’s **Model Context Protocol (MCP)** to allow a local LLM (running via **Ollama**) to autonomously call Python tools for:
 
@@ -14,9 +14,9 @@ The system enables end-to-end sales forecasting through natural language like:
 
 ---
 
-# 🚀 Features
+🚀 Features
 
-### 🔧 1. MCP-Powered Python Tooling
+🔧 1. MCP-Powered Python Tooling
 A dedicated MCP server exposes modular ML tools:
 - `list_datasets()`
 - `train_sales_model(dataset_name, date_column, target_column)`
@@ -26,7 +26,7 @@ Each tool is typed, schema-validated, and returns structured JSON.
 
 ---
 
-### 🤖 2. Local LLM Agent (via Ollama)
+🤖 2. Local LLM Agent (via Ollama)
 - Uses `gpt-oss:120b-cloud` (or any Ollama model)
 - LLM receives dynamically available tools
 - Decides when to call a tool using strict JSON schema
@@ -34,7 +34,7 @@ Each tool is typed, schema-validated, and returns structured JSON.
 
 ---
 
-### 💬 3. Streamlit Conversational Interface
+💬 3. Streamlit Conversational Interface
 A conversational UI that:
 - Stores chat history  
 - Sends user queries to the LLM agent  
@@ -43,7 +43,7 @@ A conversational UI that:
 
 ---
 
-### 📈 4. ML Forecasting Pipeline
+📈 4. ML Forecasting Pipeline
 - Loads time-series sales dataset  
 - Generates time index  
 - Trains regression model  
@@ -52,13 +52,13 @@ A conversational UI that:
 
 ---
 
-# 🏗 Project Structure
+🏗 Project Structure
 
 ```
 mcp_ollama_sales_forecast/
 │
-├── streamlit_ollama_mcp_app.py     # Frontend conversational UI
-├── mcp_sales_server.py             # MCP server exposing ML tools
+├── streamlit_ollama_mcp_app.py       Frontend conversational UI
+├── mcp_sales_server.py               MCP server exposing ML tools
 │
 ├── datasets/
 │   └── sample_sales.csv
@@ -71,32 +71,32 @@ mcp_ollama_sales_forecast/
 
 ---
 
-# 🛠 Installation
+🛠 Installation
 
-### 1️⃣ Create virtual environment
+1️⃣ Create virtual environment
 ```
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-### 2️⃣ Install dependencies
+2️⃣ Install dependencies
 ```
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Pull Ollama model
+3️⃣ Pull Ollama model
 ```
 ollama pull gpt-oss:120b-cloud
 ```
 
-### 4️⃣ Run the app
+4️⃣ Run the app
 ```
 python -m streamlit run streamlit_ollama_mcp_app.py
 ```
 
 ---
 
-# ▶️ How It Works
+▶️ How It Works
 
 1. User submits a natural-language query  
 2. Streamlit sends it to the agent  
@@ -110,7 +110,7 @@ Complete autonomous reasoning and execution loop.
 
 ---
 
-# 🧪 Example Prompts
+🧪 Example Prompts
 
 ```
 What datasets are available?
@@ -120,7 +120,7 @@ Explain whether sales are rising.
 
 ---
 
-# 🎯 Skills Demonstrated
+🎯 Skills Demonstrated
 
 - Agentic AI system design  
 - MCP integration  
@@ -133,5 +133,5 @@ Explain whether sales are rising.
 
 ---
 
-# 📄 License
+📄 License
 MIT License
